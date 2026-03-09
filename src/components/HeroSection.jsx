@@ -180,11 +180,12 @@ const HeroSection = () => {
     repeat: Infinity,
     ease: "easeInOut"
   }}
-  className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
+  className="absolute -top-4 -right-4 glass-strong rounded-xl px-6 py-3 border border-white/20 shadow-card z-20"
 >
-  <span className="text-base font-bold text-blue-500">
-    ✨ Premium
-  </span>
+  <div className="flex items-center gap-2">
+    <Sparkles className="w-4 h-4 text-blue-400" />
+    <span className="text-base font-bold text-blue-400">Premium</span>
+  </div>
 </motion.div>
 
 
@@ -196,11 +197,12 @@ const HeroSection = () => {
     repeat: Infinity,
     ease: "easeInOut"
   }}
-  className="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
+  className="absolute -bottom-4 -left-4 glass-strong rounded-xl px-6 py-3 border border-white/20 shadow-card z-20"
 >
-  <span className="text-base font-bold text-blue-500">
-    🎨 Creative
-  </span>
+  <div className="flex items-center gap-2">
+    <Star className="w-4 h-4 text-emerald-400 fill-emerald-400" />
+    <span className="text-base font-bold text-emerald-400">Creative</span>
+  </div>
 </motion.div>
               {/* HERO IMAGE FLOAT */}
               <motion.img

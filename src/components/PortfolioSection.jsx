@@ -1,13 +1,37 @@
 import { motion } from "framer-motion"
-import { Layers, Sparkles } from "lucide-react"
+import { Layers, ExternalLink } from "lucide-react"
 
-const placeholderItems = [
-  { gradient: "from-primary via-primary/80 to-primary/40", icon: "🎨" },
-  { gradient: "from-secondary via-secondary/80 to-secondary/40", icon: "📄" },
-  { gradient: "from-accent via-accent/80 to-accent/40", icon: "📱" },
-  { gradient: "from-primary via-secondary/80 to-secondary", icon: "💳" },
-  { gradient: "from-accent via-primary/60 to-primary", icon: "💌" },
-  { gradient: "from-secondary via-primary/60 to-primary", icon: "📋" }
+const portfolioItems = [
+  { 
+    title: "Event Flyer Design",
+    category: "Flyer",
+    image: "/images/portfolio-flyer.jpg"
+  },
+  { 
+    title: "Business Card Design",
+    category: "Business Card",
+    image: "/images/portfolio-business-card.jpg"
+  },
+  { 
+    title: "Social Media Posts",
+    category: "Social Media",
+    image: "/images/portfolio-social-media.jpg"
+  },
+  { 
+    title: "Wedding Invitation",
+    category: "Invitation",
+    image: "/images/portfolio-invitation.jpg"
+  },
+  { 
+    title: "Concert Poster",
+    category: "Poster",
+    image: "/images/portfolio-poster.jpg"
+  },
+  { 
+    title: "Professional Resume",
+    category: "Resume",
+    image: "/images/portfolio-resume.jpg"
+  }
 ]
 
 const PortfolioSection = () => {
@@ -34,49 +58,43 @@ const PortfolioSection = () => {
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
-          {placeholderItems.map((item, i) => (
+          {portfolioItems.map((item, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card"
+              className="group relative rounded-3xl overflow-hidden aspect-[4/3] shadow-card cursor-pointer"
             >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-80`}
+              {/* Portfolio Image */}
+              <img
+                src={item.image}
+                alt={item.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
-              {/* Animated pattern overlay */}
-              <motion.div
-                className="absolute inset-0 opacity-[0.06]"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(circle at 2px 2px, currentColor 1px, transparent 0)",
-                  backgroundSize: "28px 28px"
-                }}
-                animate={{ backgroundPosition: ["0px 0px", "28px 28px"] }}
-                transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-              />
+              {/* Gradient Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-90 transition-opacity duration-300" />
 
-              {/* Large emoji icon */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-6xl opacity-15">
-                {item.icon}
-              </div>
-
-              {/* Coming Soon overlay */}
-              <div className="absolute inset-0 flex flex-col items-center justify-center">
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-end p-6">
                 <motion.div
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  whileInView={{ scale: 1, opacity: 1 }}
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 + 0.2 }}
-                  className="glass-strong rounded-2xl px-6 py-4 text-center border border-white/20"
                 >
-                  <Sparkles className="w-5 h-5 text-primary-foreground mx-auto mb-2" />
-                  <span className="text-primary-foreground font-bold text-sm tracking-wide uppercase">
-                    Coming Soon
+                  <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 block">
+                    {item.category}
                   </span>
+                  <h3 className="text-white font-bold text-lg mb-3">
+                    {item.title}
+                  </h3>
+                  <div className="flex items-center gap-2 text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <ExternalLink className="w-4 h-4" />
+                    <span>View Project</span>
+                  </div>
                 </motion.div>
               </div>
             </motion.div>

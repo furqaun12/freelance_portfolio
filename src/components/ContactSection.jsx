@@ -169,9 +169,10 @@ const ContactSection = () => {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 rounded-xl bg-primary text-primary-foreground font-semibold flex items-center justify-center gap-2 hover:shadow-glow-primary transition-shadow duration-300"
+              className="w-full py-4 rounded-xl bg-blue-500 hover:bg-blue-600 text-white font-semibold flex items-center justify-center gap-2 hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
             >
-              Send Message <Send className="w-4 h-4" />
+              <span className="text-white">Send Message</span> 
+              <Send className="w-4 h-4 text-white" />
             </motion.button>
           </motion.form>
         </div>

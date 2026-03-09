@@ -50,13 +50,14 @@ const Footer = () => {
               href="#hero"
               className="inline-flex items-center gap-2 text-xl font-bold font-heading mb-5"
             >
-              <span className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-primary-foreground" />
+              <span className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center">
+                <Sparkles className="w-4 h-4 text-white" />
               </span>
-              <span className="text-gradient-primary">Design</span>Studio
+              <span className="text-gradient-primary">Amsons</span>
+              <span className="text-white">Studio</span>
             </a>
             <p className="text-primary-foreground/50 text-sm leading-relaxed max-w-xs">
-              Professional freelance design and documentation services. Turning
+              Professional freelance design and documentation services by Amsons Creatives. Turning
               your ideas into stunning visuals.
             </p>
           </div>
@@ -109,7 +110,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-sm text-primary-foreground/30">
-            © {new Date().getFullYear()} DesignStudio. All rights reserved.
+            © {new Date().getFullYear()} Amsons Creatives Studio. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm text-primary-foreground/30">
             <a

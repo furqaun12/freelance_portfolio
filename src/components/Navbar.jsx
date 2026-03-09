@@ -36,10 +36,11 @@ const Navbar = () => {
           href="#hero"
           className="text-xl font-bold font-heading flex items-center gap-2 group"
         >
-          <span className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center group-hover:shadow-glow-primary transition-shadow duration-300">
-            <Sparkles className="w-4 h-4 text-primary-foreground" />
+          <span className="w-8 h-8 rounded-lg bg-blue-500 flex items-center justify-center group-hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-shadow duration-300">
+            <Sparkles className="w-4 h-4 text-white" />
           </span>
-          <span className="text-gradient-primary">Amsons</span>Studio
+          <span className="text-gradient-primary">Amsons</span>
+          <span>Studio</span>
         </a>
 
         <div className="hidden md:flex items-center gap-1">
@@ -104,7 +105,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="py-3 mt-2 rounded-xl bg-primary text-primary-foreground text-sm font-semibold text-center"
+                className="py-3 mt-2 rounded-xl bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold text-center transition-colors"
               >
                 Hire Me
               </a>
