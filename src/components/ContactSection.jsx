@@ -50,30 +50,30 @@ const ContactSection = () => {
                 label: "Phone",
                 value: "+91 9003988846",
                 href: "tel:+919003988846",
-                color: "text-primary",
-                bg: "bg-primary/10",
-                glow: "hover:shadow-glow-primary",
-                border: "hover:border-primary/30"
+                color: "text-blue-500",
+                bg: "bg-blue-500/10",
+                glow: "hover:shadow-[0_0_25px_rgba(59,130,246,0.4)]",
+                border: "hover:border-blue-500/30"
               },
               {
                 icon: Mail,
                 label: "Email",
                 value: "nizamuddinengineer@gmail.com",
                 href: "mailto:nizamuddinengineer@gmail.com",
-                color: "text-secondary",
-                bg: "bg-secondary/10",
-                glow: "hover:shadow-glow-secondary",
-                border: "hover:border-secondary/30"
+                color: "text-rose-500",
+                bg: "bg-rose-500/10",
+                glow: "hover:shadow-[0_0_25px_rgba(244,63,94,0.4)]",
+                border: "hover:border-rose-500/30"
               },
               {
                 icon: MessageCircle,
                 label: "WhatsApp",
                 value: "Chat on WhatsApp",
                 href: "https://w.app/amsonscreatives",
-                color: "text-accent",
-                bg: "bg-accent/10",
-                glow: "hover:shadow-glow-accent",
-                border: "hover:border-accent/30"
+                color: "text-emerald-500",
+                bg: "bg-emerald-500/10",
+                glow: "hover:shadow-[0_0_25px_rgba(16,185,129,0.4)]",
+                border: "hover:border-emerald-500/30"
               }
             ].map(contact => (
               <motion.a

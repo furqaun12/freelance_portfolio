@@ -7,40 +7,40 @@ const features = [
     title: "Fast Delivery",
     desc:
       "Quick turnaround times without compromising on quality. Your project, delivered on time.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(108,99,255,0.35)]",
-    borderHover: "hover:border-primary/30"
+    color: "text-yellow-500",
+    bg: "bg-yellow-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(234,179,8,0.35)]",
+    borderHover: "hover:border-yellow-500/30"
   },
   {
     icon: Palette,
     title: "Creative Designs",
     desc:
       "Unique, eye-catching designs that tell your brand's story and captivate your audience.",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
-    borderHover: "hover:border-secondary/30"
+    color: "text-violet-500",
+    bg: "bg-violet-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(139,92,246,0.35)]",
+    borderHover: "hover:border-violet-500/30"
   },
   {
     icon: BadgeDollarSign,
     title: "Affordable Pricing",
     desc:
       "Premium quality designs at competitive prices. Great value for every budget.",
-    color: "text-accent",
-    bg: "bg-accent/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
-    borderHover: "hover:border-accent/30"
+    color: "text-emerald-500",
+    bg: "bg-emerald-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(16,185,129,0.35)]",
+    borderHover: "hover:border-emerald-500/30"
   },
   {
     icon: Heart,
     title: "Customer Satisfaction",
     desc:
       "Your happiness is my priority. Unlimited revisions until you're 100% satisfied.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(108,99,255,0.35)]",
-    borderHover: "hover:border-primary/30"
+    color: "text-rose-500",
+    bg: "bg-rose-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(244,63,94,0.35)]",
+    borderHover: "hover:border-rose-500/30"
   }
 ]
 
@@ -112,7 +112,7 @@ const WhyChooseSection = () => {
 
               <div className="relative z-10">
                 <motion.div
-                  className={`w-18 h-18 w-[72px] h-[72px] rounded-2xl ${f.bg} flex items-center justify-center mx-auto mb-6 transition-all duration-300`}
+                  className={`w-[72px] h-[72px] rounded-2xl ${f.bg} flex items-center justify-center mx-auto mb-6 transition-all duration-300`}
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
                 >

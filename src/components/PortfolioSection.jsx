@@ -85,7 +85,7 @@ const PortfolioSection = () => {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 + 0.2 }}
                 >
-                  <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-2 block">
+                  <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2 block">
                     {item.category}
                   </span>
                   <h3 className="text-white font-bold text-lg mb-3">

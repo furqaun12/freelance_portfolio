@@ -56,9 +56,9 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-  className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-600 !text-white font-semibold shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-500 hover:bg-blue-600 text-white text-sm font-semibold shadow-lg hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300"
           >
-           <span className="text-white"> Hire Me</span>
+            Hire Me
           </a>
         </div>
 

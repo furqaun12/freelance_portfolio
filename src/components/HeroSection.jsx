@@ -95,10 +95,10 @@ const HeroSection = () => {
   href="#contact"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.98 }}
-  className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-600 !text-white font-semibold shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
+  className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-600 text-white font-semibold shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
 >
-  <span className="text-white">Contact Now</span>
-  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
+  Contact Now
+  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
 </motion.a>
               <motion.a
                 href="#services"
@@ -129,7 +129,7 @@ const HeroSection = () => {
                       {stat.value}
                     </div>
                     {stat.icon && (
-                      <stat.icon className="w-4 h-4 fill-primary text-primary" />
+                      <stat.icon className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     )}
                   </div>
 

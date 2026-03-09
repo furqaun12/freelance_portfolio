@@ -16,80 +16,80 @@ const services = [
     title: "Documentation Work",
     desc:
       "Professional documentation, reports, and technical writing tailored to your needs.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(108,99,255,0.35)]",
-    borderHover: "hover:border-primary/30"
+    color: "text-blue-500",
+    bg: "bg-blue-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(59,130,246,0.35)]",
+    borderHover: "hover:border-blue-500/30"
   },
   {
     icon: Megaphone,
     title: "Flyer Design",
     desc:
       "Eye-catching flyers that communicate your message effectively and attract attention.",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
-    borderHover: "hover:border-secondary/30"
+    color: "text-rose-500",
+    bg: "bg-rose-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(244,63,94,0.35)]",
+    borderHover: "hover:border-rose-500/30"
   },
   {
     icon: Image,
     title: "Poster Design",
     desc:
       "Bold, creative poster designs for events, promotions, and brand awareness campaigns.",
-    color: "text-accent",
-    bg: "bg-accent/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
-    borderHover: "hover:border-accent/30"
+    color: "text-emerald-500",
+    bg: "bg-emerald-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(16,185,129,0.35)]",
+    borderHover: "hover:border-emerald-500/30"
   },
   {
     icon: CreditCard,
     title: "Business Card Design",
     desc:
       "Professional visiting cards that leave a lasting first impression on your clients.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(108,99,255,0.35)]",
-    borderHover: "hover:border-primary/30"
+    color: "text-violet-500",
+    bg: "bg-violet-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(139,92,246,0.35)]",
+    borderHover: "hover:border-violet-500/30"
   },
   {
     icon: Mail,
     title: "Invitation Card Design",
     desc:
       "Beautiful invitation cards for weddings, parties, and corporate events.",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
-    borderHover: "hover:border-secondary/30"
+    color: "text-pink-500",
+    bg: "bg-pink-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(236,72,153,0.35)]",
+    borderHover: "hover:border-pink-500/30"
   },
   {
     icon: Share2,
     title: "Social Media Post Design",
     desc:
       "Scroll-stopping social media graphics that boost engagement and brand presence.",
-    color: "text-accent",
-    bg: "bg-accent/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
-    borderHover: "hover:border-accent/30"
+    color: "text-cyan-500",
+    bg: "bg-cyan-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(6,182,212,0.35)]",
+    borderHover: "hover:border-cyan-500/30"
   },
   {
     icon: Flag,
     title: "Banner Design",
     desc:
       "High-impact banners for digital and print that grab attention instantly.",
-    color: "text-primary",
-    bg: "bg-primary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(108,99,255,0.35)]",
-    borderHover: "hover:border-primary/30"
+    color: "text-amber-500",
+    bg: "bg-amber-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(245,158,11,0.35)]",
+    borderHover: "hover:border-amber-500/30"
   },
   {
     icon: FileUser,
     title: "Resume Design",
     desc:
       "Modern, ATS-friendly resume designs that help you land your dream job.",
-    color: "text-secondary",
-    bg: "bg-secondary/10",
-    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
-    borderHover: "hover:border-secondary/30"
+    color: "text-indigo-500",
+    bg: "bg-indigo-500/10",
+    shadow: "hover:shadow-[0_8px_30px_-4px_rgba(99,102,241,0.35)]",
+    borderHover: "hover:border-indigo-500/30"
   }
 ]
 

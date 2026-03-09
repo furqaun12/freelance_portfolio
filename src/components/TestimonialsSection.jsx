@@ -8,8 +8,8 @@ const testimonials = [
     text:
       "Absolutely incredible work! The business cards and flyers designed for my startup were stunning. Quick delivery and very professional communication throughout.",
     rating: 5,
-    color: "bg-primary/10 text-primary",
-    accent: "border-primary/20"
+    color: "bg-blue-500/20 text-blue-400",
+    accent: "border-blue-500/20"
   },
   {
     name: "Rahul Mehta",
@@ -17,8 +17,8 @@ const testimonials = [
     text:
       "The invitation cards and posters for our annual event were a huge hit. Creative designs that perfectly captured the theme. Highly recommended!",
     rating: 5,
-    color: "bg-secondary/10 text-secondary",
-    accent: "border-secondary/20"
+    color: "bg-rose-500/20 text-rose-400",
+    accent: "border-rose-500/20"
   },
   {
     name: "Ananya Patel",
@@ -26,8 +26,8 @@ const testimonials = [
     text:
       "Our social media engagement doubled after using these post designs. The attention to detail and understanding of brand aesthetics is remarkable.",
     rating: 5,
-    color: "bg-accent/10 text-accent",
-    accent: "border-accent/20"
+    color: "bg-emerald-500/20 text-emerald-400",
+    accent: "border-emerald-500/20"
   }
 ]
 
@@ -70,7 +70,7 @@ const TestimonialsSection = () => {
                 } blur-2xl opacity-40`}
               />
 
-              <Quote className="w-10 h-10 text-primary/8 absolute top-6 right-6" />
+              <Quote className="w-10 h-10 text-blue-500/20 absolute top-6 right-6" />
 
               <div className="relative z-10">
                 <div className="flex gap-1 mb-5">
@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 + j * 0.08 }}
                     >
-                      <Star className="w-4 h-4 fill-primary text-primary" />
+                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                     </motion.div>
                   ))}
                 </div>
