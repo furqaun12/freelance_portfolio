@@ -17,7 +17,7 @@ const features = [
     title: "Creative Designs",
     desc:
       "Unique, eye-catching designs that tell your brand's story and captivate your audience.",
-    color: "text-secondary",
+    color: "text-primary",
     bg: "bg-secondary/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
     borderHover: "hover:border-secondary/30"
@@ -27,7 +27,7 @@ const features = [
     title: "Affordable Pricing",
     desc:
       "Premium quality designs at competitive prices. Great value for every budget.",
-    color: "text-accent",
+    color: "text-primary",
     bg: "bg-accent/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
     borderHover: "hover:border-accent/30"

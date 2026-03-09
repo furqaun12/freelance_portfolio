@@ -1,9 +1,9 @@
-import { motion } from "framer-motion"
+﻿import { motion } from "framer-motion"
 import {
   Instagram,
-  Twitter,
   Linkedin,
-  Github,
+  Mail,
+  MessageCircle,
   Sparkles,
   ArrowUpRight
 } from "lucide-react"
@@ -12,21 +12,25 @@ const socialLinks = [
   {
     icon: Instagram,
     label: "Instagram",
+    href: "https://instagram.com",
     color: "hover:bg-accent/20 hover:text-accent"
-  },
-  {
-    icon: Twitter,
-    label: "Twitter",
-    color: "hover:bg-primary/20 hover:text-primary"
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
+    href: "https://linkedin.com",
+    color: "hover:bg-primary/20 hover:text-primary"
+  },
+  {
+    icon: MessageCircle,
+    label: "WhatsApp",
+    href: "https://w.app/amsonscreatives",
     color: "hover:bg-secondary/20 hover:text-secondary"
   },
   {
-    icon: Github,
-    label: "GitHub",
+    icon: Mail,
+    label: "Email",
+    href: "mailto:nizamuddinengineer@gmail.com",
     color: "hover:bg-primary/20 hover:text-primary"
   }
 ]
@@ -34,10 +38,8 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden bg-foreground text-primary-foreground">
-      {/* Top gradient line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
-      {/* Background decoration */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -bottom-20 -right-20 w-80 h-80 rounded-full bg-primary/5 blur-[100px]" />
         <div className="absolute -top-20 -left-20 w-60 h-60 rounded-full bg-secondary/5 blur-[80px]" />
@@ -53,19 +55,17 @@ const Footer = () => {
               <span className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-primary-foreground" />
               </span>
-              <span className="text-gradient-primary">Design</span>Studio
+              <span className="text-gradient-primary">Amsons</span>Studio
             </a>
-            <p className="text-primary-foreground/50 text-sm leading-relaxed max-w-xs">
-              Professional freelance design and documentation services. Turning
-              your ideas into stunning visuals.
+            <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-xs">
+              Professional freelance design and documentation services, turning
+              your ideas into impactful visual assets.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-5 text-primary-foreground/80">
-              Services
-            </h4>
-            <ul className="space-y-2.5 text-sm text-primary-foreground/50">
+            <h4 className="font-semibold mb-5 text-primary-foreground/85">Services</h4>
+            <ul className="space-y-2.5 text-sm text-primary-foreground/60">
               {[
                 "Flyer Design",
                 "Poster Design",
@@ -88,16 +88,17 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-5 text-primary-foreground/80">
-              Connect
-            </h4>
+            <h4 className="font-semibold mb-5 text-primary-foreground/85">Connect</h4>
             <div className="flex gap-3">
-              {socialLinks.map((social, i) => (
+              {socialLinks.map(social => (
                 <motion.a
-                  key={i}
-                  href="#"
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   whileHover={{ y: -4, scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
+                  aria-label={social.label}
                   className={`w-11 h-11 rounded-xl bg-primary-foreground/8 flex items-center justify-center transition-colors duration-300 ${social.color}`}
                 >
                   <social.icon className="w-4 h-4" />
@@ -107,20 +108,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/8 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-sm text-primary-foreground/30">
-            © {new Date().getFullYear()} DesignStudio. All rights reserved.
+        <div className="border-t border-primary-foreground/12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="text-sm text-primary-foreground/45">
+            Copyright {new Date().getFullYear()} Amsons Studio. All rights reserved.
           </div>
-          <div className="flex gap-6 text-sm text-primary-foreground/30">
+          <div className="flex gap-6 text-sm text-primary-foreground/45">
             <a
               href="#"
-              className="hover:text-primary-foreground/60 transition-colors"
+              className="hover:text-primary-foreground/70 transition-colors"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="hover:text-primary-foreground/60 transition-colors"
+              className="hover:text-primary-foreground/70 transition-colors"
             >
               Terms of Service
             </a>

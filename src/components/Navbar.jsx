@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+﻿import { useState, useEffect } from "react"
 import { Menu, X, Sparkles } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
@@ -14,10 +14,10 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
-   const handleScroll = () => {
-  if (window.scrollY > 20) setScrolled(true)
-  else setScrolled(false)
-}
+    const handleScroll = () => {
+      if (window.scrollY > 20) setScrolled(true)
+      else setScrolled(false)
+    }
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -55,15 +55,16 @@ const Navbar = () => {
           ))}
           <a
             href="#contact"
-  className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-600 !text-white font-semibold shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 !text-white [&_svg]:!text-white font-semibold hover:bg-blue-700 transition-all duration-300"
           >
-           <span className="text-white"> Hire Me</span>
+            Hire Me
           </a>
         </div>
 
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden p-2 rounded-xl hover:bg-primary/5 transition-colors"
+          aria-label="Toggle navigation menu"
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -104,7 +105,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="py-3 mt-2 rounded-xl bg-primary text-primary-foreground text-sm font-semibold text-center"
+                className="py-3 mt-2 rounded-xl bg-blue-600 !text-white [&_svg]:!text-white text-sm font-semibold text-center hover:bg-blue-700 transition-colors duration-300"
               >
                 Hire Me
               </a>

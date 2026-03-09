@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Executive Resume Layout</title>
+  <desc id="desc">Resume design mockup with profile header and timeline sections.</desc>
+  <rect width="1200" height="900" fill="#eef3fb"/>
+  <rect x="180" y="70" width="840" height="760" rx="32" fill="#ffffff" stroke="#d5e0f2" stroke-width="8"/>
+  <rect x="240" y="130" width="180" height="180" rx="24" fill="#c9d9f4"/>
+  <rect x="460" y="145" width="420" height="34" rx="17" fill="#273d72"/>
+  <rect x="460" y="200" width="320" height="18" rx="9" fill="#9ab2dd"/>
+  <rect x="240" y="360" width="640" height="20" rx="10" fill="#b7c7e5"/>
+  <rect x="240" y="400" width="720" height="20" rx="10" fill="#b7c7e5"/>
+  <rect x="240" y="455" width="220" height="26" rx="13" fill="#273d72"/>
+  <rect x="240" y="500" width="720" height="16" rx="8" fill="#b7c7e5"/>
+  <rect x="240" y="535" width="720" height="16" rx="8" fill="#b7c7e5"/>
+  <rect x="240" y="570" width="680" height="16" rx="8" fill="#b7c7e5"/>
+  <rect x="240" y="625" width="220" height="26" rx="13" fill="#273d72"/>
+  <rect x="240" y="670" width="720" height="16" rx="8" fill="#b7c7e5"/>
+  <rect x="240" y="705" width="640" height="16" rx="8" fill="#b7c7e5"/>
+</svg>

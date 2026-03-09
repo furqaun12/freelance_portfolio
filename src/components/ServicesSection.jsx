@@ -26,7 +26,7 @@ const services = [
     title: "Flyer Design",
     desc:
       "Eye-catching flyers that communicate your message effectively and attract attention.",
-    color: "text-secondary",
+    color: "text-primary",
     bg: "bg-secondary/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
     borderHover: "hover:border-secondary/30"
@@ -36,7 +36,7 @@ const services = [
     title: "Poster Design",
     desc:
       "Bold, creative poster designs for events, promotions, and brand awareness campaigns.",
-    color: "text-accent",
+    color: "text-primary",
     bg: "bg-accent/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
     borderHover: "hover:border-accent/30"
@@ -56,7 +56,7 @@ const services = [
     title: "Invitation Card Design",
     desc:
       "Beautiful invitation cards for weddings, parties, and corporate events.",
-    color: "text-secondary",
+    color: "text-primary",
     bg: "bg-secondary/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
     borderHover: "hover:border-secondary/30"
@@ -66,7 +66,7 @@ const services = [
     title: "Social Media Post Design",
     desc:
       "Scroll-stopping social media graphics that boost engagement and brand presence.",
-    color: "text-accent",
+    color: "text-primary",
     bg: "bg-accent/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(0,184,148,0.35)]",
     borderHover: "hover:border-accent/30"
@@ -86,7 +86,7 @@ const services = [
     title: "Resume Design",
     desc:
       "Modern, ATS-friendly resume designs that help you land your dream job.",
-    color: "text-secondary",
+    color: "text-primary",
     bg: "bg-secondary/10",
     shadow: "hover:shadow-[0_8px_30px_-4px_rgba(255,118,117,0.35)]",
     borderHover: "hover:border-secondary/30"

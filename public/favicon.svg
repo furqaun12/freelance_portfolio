@@ -1,0 +1,12 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Amsons Studio icon</title>
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4653ff"/>
+      <stop offset="100%" stop-color="#00d2a4"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0c1324"/>
+  <rect x="14" y="14" width="100" height="100" rx="24" fill="url(#a)"/>
+  <path d="M40 88L58 40H70L88 88H77L73 76H55L51 88H40ZM58 66H70L64 49L58 66Z" fill="#ffffff"/>
+</svg>

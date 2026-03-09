@@ -1,0 +1,21 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Tech Expo Flyer</title>
+  <desc id="desc">Gradient flyer mockup with bold heading and call to action blocks.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3747ff"/>
+      <stop offset="100%" stop-color="#11b8ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="#091122"/>
+  <rect x="70" y="70" width="1060" height="760" rx="38" fill="url(#g1)"/>
+  <rect x="130" y="130" width="940" height="640" rx="28" fill="#f8fbff" fill-opacity="0.92"/>
+  <rect x="180" y="190" width="340" height="26" rx="13" fill="#c6d4ff"/>
+  <rect x="180" y="250" width="560" height="62" rx="18" fill="#1f2f6a"/>
+  <rect x="180" y="340" width="690" height="26" rx="13" fill="#6f7ca8"/>
+  <rect x="180" y="386" width="630" height="26" rx="13" fill="#6f7ca8"/>
+  <rect x="180" y="470" width="270" height="86" rx="22" fill="#3747ff"/>
+  <text x="315" y="523" text-anchor="middle" fill="#ffffff" font-size="36" font-family="Segoe UI, sans-serif" font-weight="700">REGISTER</text>
+  <circle cx="900" cy="500" r="130" fill="#11b8ff" fill-opacity="0.18"/>
+  <circle cx="960" cy="580" r="74" fill="#3747ff" fill-opacity="0.22"/>
+</svg>

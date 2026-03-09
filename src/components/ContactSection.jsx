@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+﻿import { motion } from "framer-motion"
 import { Phone, Mail, MessageCircle, Send, MapPin } from "lucide-react"
 import { useState } from "react"
 
@@ -8,8 +8,12 @@ const ContactSection = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    const mailtoLink = `mailto:nizamuddinengineer@gmail.com?subject=Inquiry from ${formData.name}&body=${formData.message}`
-    window.open(mailtoLink)
+    const subject = encodeURIComponent(`Inquiry from ${formData.name}`)
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )
+    const mailtoLink = `mailto:nizamuddinengineer@gmail.com?subject=${subject}&body=${body}`
+    window.open(mailtoLink, "_blank")
   }
 
   return (
@@ -27,11 +31,11 @@ const ContactSection = () => {
             <MapPin className="w-3.5 h-3.5" /> Get In Touch
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-3 mb-5">
-            Let's <span className="text-gradient-highlight">Work Together</span>
+            Let&apos;s <span className="text-gradient-highlight">Work Together</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Have a project in mind? I'd love to hear about it. Send me a message
-            and let's create something amazing.
+            Have a project in mind? I&apos;d love to hear about it. Send me a message
+            and let&apos;s create something amazing.
           </p>
         </motion.div>
 
@@ -60,7 +64,7 @@ const ContactSection = () => {
                 label: "Email",
                 value: "nizamuddinengineer@gmail.com",
                 href: "mailto:nizamuddinengineer@gmail.com",
-                color: "text-secondary",
+                color: "text-primary",
                 bg: "bg-secondary/10",
                 glow: "hover:shadow-glow-secondary",
                 border: "hover:border-secondary/30"
@@ -70,7 +74,7 @@ const ContactSection = () => {
                 label: "WhatsApp",
                 value: "Chat on WhatsApp",
                 href: "https://w.app/amsonscreatives",
-                color: "text-accent",
+                color: "text-primary",
                 bg: "bg-accent/10",
                 glow: "hover:shadow-glow-accent",
                 border: "hover:border-accent/30"
@@ -92,9 +96,7 @@ const ContactSection = () => {
                   <contact.icon className={`w-6 h-6 ${contact.color}`} />
                 </motion.div>
                 <div>
-                  <div className="text-sm text-muted-foreground">
-                    {contact.label}
-                  </div>
+                  <div className="text-sm text-muted-foreground">{contact.label}</div>
                   <div className="font-semibold">{contact.value}</div>
                 </div>
               </motion.a>
@@ -156,9 +158,7 @@ const ContactSection = () => {
                 required
                 rows={4}
                 value={formData.message}
-                onChange={e =>
-                  setFormData({ ...formData, message: e.target.value })
-                }
+                onChange={e => setFormData({ ...formData, message: e.target.value })}
                 onFocus={() => setFocused("message")}
                 onBlur={() => setFocused(null)}
                 className="w-full px-5 py-3.5 rounded-xl border border-input bg-background/50 focus:ring-2 focus:ring-primary/20 focus:border-primary/50 outline-none transition-all duration-300 resize-none"
@@ -169,7 +169,7 @@ const ContactSection = () => {
               type="submit"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full py-4 rounded-xl bg-primary text-primary-foreground font-semibold flex items-center justify-center gap-2 hover:shadow-glow-primary transition-shadow duration-300"
+              className="w-full py-4 rounded-xl bg-blue-600 text-white font-semibold flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors duration-300"
             >
               Send Message <Send className="w-4 h-4" />
             </motion.button>

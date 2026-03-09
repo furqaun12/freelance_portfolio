@@ -1,4 +1,4 @@
-import { motion } from "framer-motion"
+﻿import { motion } from "framer-motion"
 import { ArrowRight, Eye, Sparkles, Star } from "lucide-react"
 import heroImg from "@/assets/hero-illustration.png"
 
@@ -8,7 +8,6 @@ const HeroSection = () => {
       id="hero"
       className="relative min-h-screen flex items-center overflow-hidden bg-mesh"
     >
-      {/* Animated background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
@@ -28,7 +27,6 @@ const HeroSection = () => {
           className="absolute top-1/3 right-1/4 w-[300px] h-[300px] rounded-full bg-accent/5 blur-[60px]"
         />
 
-        {/* Floating shapes */}
         <motion.div
           animate={{ y: [-10, 10, -10], rotate: [0, 45, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -50,8 +48,6 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-6 py-20 pt-32 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-          {/* LEFT CONTENT */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -68,19 +64,9 @@ const HeroSection = () => {
             </motion.span>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 tracking-tight">
-              Creative{" "}
-              <span className="text-gradient-primary relative">
-                Design
-                <motion.span
-                  className="absolute -bottom-1 left-0 right-0 h-1 bg-primary/20 rounded-full"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ delay: 0.8, duration: 0.6 }}
-                />
-              </span>
+              Creative <span className="text-gradient-primary relative">Design</span>
               {" & "}
-              <span className="text-green-500">Documentation</span>{" "}
-              Services
+              <span className="text-green-500">Documentation</span> Services
             </h1>
 
             <p className="text-lg text-muted-foreground max-w-lg mb-10 leading-relaxed">
@@ -89,17 +75,16 @@ const HeroSection = () => {
               brand stand out.
             </p>
 
-            {/* BUTTONS */}
             <div className="flex flex-wrap gap-4">
               <motion.a
-  href="#contact"
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.98 }}
-  className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-500 hover:bg-blue-600 !text-white font-semibold shadow-lg hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300"
->
-  <span className="text-white">Contact Now</span>
-  <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1 transition-transform" />
-</motion.a>
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+                className="group inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-blue-600 !text-white [&_svg]:!text-white font-semibold shadow-lg hover:bg-blue-700 transition-all duration-300"
+              >
+                Contact Now
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </motion.a>
               <motion.a
                 href="#services"
                 whileHover={{ scale: 1.05 }}
@@ -111,7 +96,6 @@ const HeroSection = () => {
               </motion.a>
             </div>
 
-            {/* STATS */}
             <div className="flex items-center gap-10 mt-14 pt-8 border-t border-border/50">
               {[
                 { value: "50+", label: "Projects Done" },
@@ -141,7 +125,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT IMAGE */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -149,8 +132,6 @@ const HeroSection = () => {
             className="hidden lg:flex justify-center"
           >
             <div className="relative">
-
-              {/* rotating rings */}
               <div className="absolute inset-[-20px] rounded-full border border-dashed border-primary/15 animate-spin-slow" />
 
               <div
@@ -161,7 +142,6 @@ const HeroSection = () => {
                 }}
               />
 
-              {/* glow */}
               <motion.div
                 animate={{ scale: [1, 1.1, 1], opacity: [0.3, 0.5, 0.3] }}
                 transition={{
@@ -172,37 +152,28 @@ const HeroSection = () => {
                 className="absolute inset-0 bg-primary/10 rounded-full blur-[60px] scale-75"
               />
 
-            {/* PREMIUM BADGE */}
-<motion.div
-  animate={{ y: [-10, 10, -10] }}
-  transition={{
-    duration: 4,
-    repeat: Infinity,
-    ease: "easeInOut"
-  }}
-  className="absolute -top-4 -right-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
->
-  <span className="text-base font-bold text-blue-500">
-    ✨ Premium
-  </span>
-</motion.div>
+              <motion.div
+                animate={{ y: [-10, 10, -10] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -top-4 -right-4 glass-strong rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
+              >
+                <span className="inline-flex items-center gap-2 text-sm font-bold text-blue-700">
+                  <span className="text-blue-400 leading-none" aria-hidden="true">✨</span>
+                  Premium
+                </span>
+              </motion.div>
 
+              <motion.div
+                animate={{ y: [10, -10, 10] }}
+                transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-4 -left-4 glass-strong rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
+              >
+                <span className="inline-flex items-center gap-2 text-sm font-bold text-blue-700">
+                  <span className="text-base leading-none" aria-hidden="true">🎨</span>
+                  Creative
+                </span>
+              </motion.div>
 
-{/* CREATIVE BADGE */}
-<motion.div
-  animate={{ y: [10, -10, 10] }}
-  transition={{
-    duration: 4.5,
-    repeat: Infinity,
-    ease: "easeInOut"
-  }}
-  className="absolute -bottom-4 -left-4 bg-white/10 backdrop-blur-md rounded-xl px-6 py-3 border border-gray-300 shadow-card z-20"
->
-  <span className="text-base font-bold text-blue-500">
-    🎨 Creative
-  </span>
-</motion.div>
-              {/* HERO IMAGE FLOAT */}
               <motion.img
                 src={heroImg}
                 animate={{ y: [-15, 15, -15] }}
@@ -212,10 +183,10 @@ const HeroSection = () => {
                   ease: "easeInOut"
                 }}
                 className="w-[500px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.25)]"
+                alt="Creative designer working on branding and digital assets"
               />
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>
